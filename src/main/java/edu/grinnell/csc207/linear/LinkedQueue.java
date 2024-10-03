@@ -76,7 +76,7 @@ public class LinkedQueue<T> implements Queue<T> {
   @Override
   public Iterator<T> iterator() {
     return new LinkedQueueIterator<T>(this);
-  } // iterator()
+  } // iterator() 
 
   // +---------------+---------------------------------------------------
   // | Queue Methods |
