@@ -23,20 +23,20 @@ public class StringUtils {
     Stack<Character> parens = new LinkedStack<Character>();
     for (int i = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
-      if (ch == '(') {
+      if (ch == '(' || ch == '[') {
         try {
           parens.push(ch);
         } catch (Exception e) {
           // Do nothing
         }
-      } else if (ch == ')') {
+      } else if (ch == ')' || ch == ']') {
         char c;
         try {
           c = parens.pop();
         } catch (Exception e) {
           return false;
         }
-        if (c != '(') {
+        if ((c != '(' && ch == ')') || (c != '[' && ch == ']')) {
           return false;
         }
       }
