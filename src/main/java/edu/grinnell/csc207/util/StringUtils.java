@@ -9,7 +9,7 @@ import java.io.PrintWriter;
  * Assorted utilities for working with strings.
  * 
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Mina Bakrac and Leo Goldman
  */ 
 public class StringUtils {
   // +------------------+--------------------------------------------

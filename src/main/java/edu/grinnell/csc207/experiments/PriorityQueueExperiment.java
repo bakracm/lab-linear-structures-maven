@@ -11,7 +11,7 @@ import java.util.Comparator;
  * Simple experiments with various implementations of priority queues.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Mina Bakrac and Leo Goldman
  */
 public class PriorityQueueExperiment {
 

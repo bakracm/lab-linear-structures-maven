@@ -8,7 +8,7 @@ import edu.grinnell.csc207.util.StringUtils;
  * Experiments with matching parentheses and other such things.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Mina Bakrac and Leo Goldman
  */
 public class MatchingExperiments {
   // +---------+-----------------------------------------------------
