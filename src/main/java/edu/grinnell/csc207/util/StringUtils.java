@@ -21,7 +21,27 @@ public class StringUtils {
    */
   public static boolean checkMatching(String str) {
     Stack<Character> parens = new LinkedStack<Character>();
-    return false;       // STUB
+    for (int i = 0; i < str.length(); i++) {
+      char ch = str.charAt(i);
+      if (ch == '(') {
+        try {
+          parens.push(ch);
+        } catch (Exception e) {
+          // Do nothing
+        }
+      } else if (ch == ')') {
+        char c;
+        try {
+          c = parens.pop();
+        } catch (Exception e) {
+          return false;
+        }
+        if (c != '(') {
+          return false;
+        }
+      }
+    }
+    return parens.isEmpty();
   } // checkMatching
 } // class StringUtils    
 
